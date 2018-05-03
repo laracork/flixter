@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <div class="frontpage">
-      <title>Magical School</title>
+    <title>Magical School</title>
     </div>
-    <%= csrf_meta_tags %> >
+    <%= csrf_meta_tags %> 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
@@ -58,34 +57,34 @@
   <div id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-3">
+          <div class="col-12 col-sm-3 text-center">
             <b>Teachers</b>
-            <br />
+            <hr>
             <%= link_to 'Teach a Course', new_instructor_course_path %>
             <br />
             <%= link_to 'My Dashboard', dashboard_path %>
           </div>
-          <div class="col-6 col-sm-3">
+          <div class="col-6 col-sm-3 text-center">
             <b>About</b>
-            <br />
+            <hr>
             <%= link_to 'Staff', team_path %>
             <br />
             <%= link_to 'Careers', careers_path %>
             <br />
             <%= link_to 'Privacy Policy', privacy_path %>
           </div>
-          <div class="col-12 col-sm-3">
+          <div class="col-12 col-sm-3 text-center">
             <b>Contact</b>
-            <br />
+            <hr>
             learn@magicschool.com
             <br />
             A Magical Place
             <br />
             England
           </div>
-          <div class="col-12 col-sm-3 social">
+          <div class="col-12 col-sm-3 text-center">
             <b>Social</b>
-            <br />
+            <hr>
             <%= link_to 'https://plus.google.com/u/2/collection/8cImZE', target: :_blank do %>
               <span class="fa fa-google-plus fa-2x social-button"></span>
             <% end %>
