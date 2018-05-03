@@ -8,9 +8,9 @@
 
   <% @courses.each do |course| %>
     <div class="course-box">
-      <hr2 class="course-title text-center">
-        <%= link_to course.title, course_path(course) %></hr2>
-      <br />
+      <h2 class="course-title text-center">
+        <%= link_to course.title, course_path(course) %></h2>
+
       <div class="col-10 offset-1 image-center">
         <%= image_tag course.image, class: 'img-fluid' %>
         <br /><br />
@@ -27,5 +27,5 @@
     </div>
   </div>
   <br class="clr" />
-  <% end %>
+<% end %>
 </div>
