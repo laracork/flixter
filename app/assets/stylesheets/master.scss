@@ -18,6 +18,11 @@
   font-weight: 800;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .nav-title a:hover {
   text-decoration: none;
   color: white;
@@ -43,15 +48,21 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty h1 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
 .frosty h2 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 200;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+.para {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 400;
+  fong-size: 20px;
 }
 
 .btn {

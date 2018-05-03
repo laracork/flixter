@@ -29,10 +29,19 @@ body {
   font-weight: 100;
 }
 
+#footer b {
+  font-weight: 600;
+}
+
+#footer hr {
+  margin: 0;
+  border-color: white;
+}
+
 .social-button {
   margin: 4px;
 }
 
-.social a:hover {
+.social a:hover, a:active, a:visited {
   text-decoration: none;
 }

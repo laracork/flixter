@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <div class="head">
     <title>Magical School</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+  </div>
   </head>
 
   <body>
@@ -66,7 +68,7 @@
           <div class="col-6 col-sm-3">
             <b>About</b>
             <br />
-            <%= link_to 'Team', team_path %>
+            <%= link_to 'Staff', team_path %>
             <br />
             <%= link_to 'Careers', careers_path %>
             <br />

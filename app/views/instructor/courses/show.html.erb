@@ -1,10 +1,7 @@
 
 <script>
-  $(function() {
-      $('.new-lesson-button').click(function(event) {
-        var lessonUrl = $(event.target).data('lesson-url');
-        $('#newLessonForm').attr('action', lessonUrl);
-      });
+  
+    $(function() {  
       $('.lessons').sortable({
         update: function(event, ui) {
           $.ajax({
@@ -15,6 +12,9 @@
           });
         }
       });
+    });
+
+    $(function() {  
       $('.sections').sortable({
          update: function(event, ui ) {
           $.ajax({
@@ -26,19 +26,29 @@
         }
       });
     });
+
+      $(function() {
+            $('.new-lesson-button').click(function() {
+              var lessonUrl = $(event.target).data('lesson-url');
+              $('#newLessonForm').attr('action', lessonUrl);
+            });
+          });
+
 </script>
 
 <br />
 <div class="booyah-box col-10 offset-1">
-  <h1 class="text-center"><%= current_course.title %></h1>
+  <div class="title-box">
+    <h1 class="text-center"><%= current_course.title %></h1>
+  </div>
   <br />
+  <div class="col-10 offset-1 image-center">
+    <%= image_tag current_course.image, class: 'img-fluid' %>
+  </div>
+  <br /><br />
   <%= link_to 'Preview As Student', course_path(current_course), class: 'btn btn-warning float-right' %>
+  <br />
   <br class="clr" />
-  <br/><br/>
-  <%= image_tag current_course.image, class: 'img-fluid' %>
-
-  <br/><br/><br/>
-
   <div class="text-center">
   <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newSectionModal">
@@ -83,9 +93,10 @@
         <% end %>
       </ul>
     </li>
+    <br class="clr" />
   <% end %>
 </ul>
-<br class="clr" />
+
 
 </div>    
 
@@ -95,7 +106,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
+          <span aria-hidden="true">&times;</span>
         </button>
         <h4 class="modal-title" id="newSectionModalLabel">Add a new section</h4>
       </div>
