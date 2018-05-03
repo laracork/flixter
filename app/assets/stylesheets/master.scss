@@ -11,6 +11,15 @@
 .navbar-inverse a.navbar-brand {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 100;
+}
+
+.nav-title {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.nav-title a:hover {
+  text-decoration: none;
   color: white;
 }
 
@@ -43,6 +52,10 @@ h1, h2, h3, h4, h5, h6, .navbar {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+.btn {
+  border-radius: 0;
 }
 
 .feature {
@@ -142,4 +155,40 @@ ul .header .fa {
 
 .lessons li p {
   margin: 0;
+}
+
+.title-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+}
+
+.title-box h1 {
+  color: #6D6D6D;
+  font-weight: 600;
+}
+
+.course-title {
+  font-weight: 600;
+}
+
+.course-box {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 30px;
+}
+
+.image-center {
+    display: block;
+    text-align: center;
+}
+
+img {
+  width: auto;
+  height: auto;
 }

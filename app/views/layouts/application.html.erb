@@ -15,13 +15,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     <div class="nav-title">
-      <%= link_to 'Magical School', root_path %>
+      <%= link_to 'Magical School', root_path, class: 'nav-link' %>
     </div>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-      <li class="nav-item">
-        <%= link_to 'See All Courses', courses_path, class: 'nav-link'%>
-      </li>          
+          <li class="nav-item">
+            <%= link_to 'See All Courses', courses_path, class: 'nav-link'%>
+          </li>          
         </ul>
         <ul class="navbar-nav">
           <% if user_signed_in? %>
@@ -63,14 +63,14 @@
             <br />
             <%= link_to 'My Dashboard', dashboard_path %>
           </div>
-          <div class="col-12 col-sm-3">
+          <div class="col-6 col-sm-3">
             <b>About</b>
             <br />
-            <%= link_to 'Team', '#' %>
+            <%= link_to 'Team', team_path %>
             <br />
-            <%= link_to 'Careers', '#' %>
+            <%= link_to 'Careers', careers_path %>
             <br />
-            <%= link_to 'Privacy Policy', '#' %>
+            <%= link_to 'Privacy Policy', privacy_path %>
           </div>
           <div class="col-12 col-sm-3">
             <b>Contact</b>
@@ -83,7 +83,6 @@
           </div>
           <div class="col-12 col-sm-3 social">
             <b>Social</b>
-            <br />
             <br />
             <%= link_to 'https://plus.google.com/u/2/collection/8cImZE', target: :_blank do %>
               <span class="fa fa-google-plus fa-2x social-button"></span>
